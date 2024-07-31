@@ -26,7 +26,7 @@ LuminaLED-Morphogenesis is an advanced Arduino project that combines mathematics
 
 5. Upload to Arduino (assuming it's connected to /dev/ttyUSB0):
     `avrdude -c arduino -p atmega328p -P /dev/ttyUSB0 -U flash:w:led_pattern.hex`
-**Note:** 
+## **Note:** 
   - Ensure you have the AVR toolchain and avrdude installed on your system.
   - After uploading, the LEDs should start displaying the generated pattern.
 
