@@ -16,17 +16,19 @@ LuminaLED-Morphogenesis is an advanced Arduino project that combines mathematics
     ```git clone https://github.com/yezzfusl/LuminaLED-Morphogenesis.git```
 
 2.Navigate to the project directory:
-    ```cd LuminaLED-Morphogenesis```
+    `cd LuminaLED-Morphogenesis`
 
 3. Compile the code using avr-gcc:
-    ```avr-gcc -mmcu=atmega328p -DF_CPU=16000000UL -Os -o led_pattern.elf led_pattern.c -lm```
+    `avr-gcc -mmcu=atmega328p -DF_CPU=16000000UL -Os -o led_pattern.elf led_pattern.c -lm`
 
 4. Create the hex file:
-    ```avr-objcopy -O ihex -R .eeprom led_pattern.elf led_pattern.hex```
+    `avr-objcopy -O ihex -R .eeprom led_pattern.elf led_pattern.hex`
 
 5. Upload to Arduino (assuming it's connected to /dev/ttyUSB0):
-    ```avrdude -c arduino -p atmega328p -P /dev/ttyUSB0 -U flash:w:led_pattern.hex```
+    `avrdude -c arduino -p atmega328p -P /dev/ttyUSB0 -U flash:w:led_pattern.hex`
 **Note:** 
-    Ensure you have the AVR toolchain and avrdude installed on your system.
-    After uploading, the LEDs should start displaying the generated pattern.
+  - Ensure you have the AVR toolchain and avrdude installed on your system.
+  - After uploading, the LEDs should start displaying the generated pattern.
+
+
 
